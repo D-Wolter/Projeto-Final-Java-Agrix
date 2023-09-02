@@ -1,44 +1,37 @@
-# `Projeto Final - Agrix - (Java - Spring)`
+# Documentação do Projeto - Agrix (Java - Spring)
 
 
-## Especificações do projeto
+## Visão Geral
+Este projeto, denominado "Agrix," representa uma aplicação Java baseada no ecossistema Spring que aborda vários aspectos fundamentais do desenvolvimento de software, incluindo o design de APIs RESTful, gerenciamento de dependências, persistência de dados, manipulação de erros, Dockerização e segurança. A seguir, destacamos os principais aspectos deste projeto e suas realizações:
 
-Neste projeto tive oportunidade de exercitar:
+## Conquistas no Projeto
+##Neste projeto, tive a oportunidade de demonstrar uma série de habilidades essenciais, incluindo:
 
-- Aplicar o conhecimento do ecossistema Spring para criar rotas da API.
-- Aplicar a injeção de dependência para conectar as camadas de controle, serviço e persistência.
-- Utilizar o Spring Data JPA para implementar entidades e repositórios para a persistência em banco
-  de dados.
-- Implementar gerenciamento de erros no Spring Web.
-- Criar o Dockerfile para configurar a aplicação para execução no Docker.
-- Aplicar o conhecimento do ecossistema Spring para criar rotas da API.
-- Aplicar a injeção de dependência para conectar as camadas de controle, serviço e persistência.
-- Utilizar o Spring Data JPA para implementar entidades e repositórios para a persistência em banco
-  de dados, bem como implementar buscas customizadas.
-- Utilizar campos de data nas rotas da API e no banco de dados
-- Criar testes unitários para garantir a qualidade e funcionamento correto da implementação, com
-  cobertura de código adequada. 
-- Aplicar o conhecimento sobre Spring Security para adicionar autenticação ao projeto.
-- Garantir que diferentes rotas atenda a regras específicas de autorização. 
+Desenvolvimento com Spring
+Utilizei o ecossistema Spring para criar rotas eficientes e seguras para nossa API.
+Implementei a injeção de dependência para conectar as camadas de controle, serviço e persistência, promovendo um código limpo e modular.
+Utilizei o Spring Data JPA para definir entidades e repositórios, simplificando a interação com o banco de dados.
+Criei buscas personalizadas usando o Spring Data JPA para aprimorar a eficiência e flexibilidade da persistência de dados.
+Utilizei campos de data nas rotas da API e no banco de dados para suportar funcionalidades relacionadas a datas.
+Testes Unitários e Qualidade de Código
+Desenvolvi testes unitários abrangentes para garantir a qualidade e o funcionamento correto da implementação.
+Alcancei uma cobertura de código adequada, garantindo que os testes abranjam todos os cenários críticos.
+Gerenciamento de Erros
+Implementei uma estratégia de gerenciamento de erros sólida no Spring Web, proporcionando respostas adequadas a exceções inesperadas.
+Dockerização
+Criei um Dockerfile personalizado para facilitar a implantação e execução da aplicação em contêineres Docker, melhorando a portabilidade e escalabilidade da aplicação.
+Segurança
+Utilizei o Spring Security para adicionar autenticação ao projeto, protegendo nossos recursos de forma eficaz.
+Garanti que diferentes rotas atendam a regras específicas de autorização, aumentando a segurança da aplicação.
+Detalhes das Entidades
+Neste projeto, trabalhamos com as seguintes entidades:
 
+Fazenda (farm): Representa uma fazenda.
+Plantação (crop): Representa uma plantação e mantém um relacionamento "muitos para um" com a tabela de fazendas (farm). Além disso, essa entidade inclui campos de datas cruciais para o nosso projeto.
+Fertilizante (fertilizer): Esta nova tabela representa um fertilizante e está relacionada de forma "muitos para muitos" com a tabela de plantações (crop) por meio da tabela crop_fertilizer.
+É importante observar que embora os nomes das tabelas e colunas possam ser personalizados, o projeto inclui testes que fazem solicitações à sua API, esperando respostas com base nesse modelo de dados. Embora os testes não exijam um banco de dados específico, sugerimos o uso do MySQL para sua implementação. Lembre-se de que os testes utilizam um banco de dados "mockado" em memória do tipo H2, o que não deve afetar sua implementação, mas evite funcionalidades altamente específicas de um determinado banco de dados que não sejam compatíveis com os testes.
 
-## Detalhes das Entidades
-
-
-Nesse modelos, temos as seguintes tabelas:
-- `farm`: representa uma fazenda
-- `crop`: representa uma plantação, e está em relacionamento `n:1` ("muitos para um") com a tabela `farm`
-  - Esta tabela recebeu alguns campos a mais, que guardam datas, e que precisarão ser considerados durante o desenvolvimento da Fase B.
-- `fertilizer`: esta nova tabela representa um fertilizante, e está em um relacionamento `n:n` ("muitos para muitos") com a tabela `crop`. Esse relacionamento é realizado através da tabela `crop_fertilizer`.
-
-A diferença agora é que precisamos integrar o código para controle de pessoas ao restante da nossa aplicação.
-
-Alguns elementos importantes a considerar sobre a implementação da camada de persistência e do banco de dados:
-- Apesar do nome das tabelas e colunas (com seus tipos) não precisarem ser exatamente esses, os testes do projeto chamarão sua API usando requisições e esperam respostas baseados nesse modelo.
-- Os testes do projeto não esperam um banco de dados específico. No entanto, sugerimos que você utilize o MySQL como banco de dados.
-- Os testes do projeto utilizam um banco "mockado" em memória do tipo H2. Isso não deve afetar sua implementação, mas tome cuidado ao utilizar funcionalidades muito específicas de um determinado tipo de banco de dados e que não sejam compatíveis com os testes.
-</details>
-
+Em resumo, o projeto "Agrix" representa uma realização significativa no desenvolvimento de aplicativos Java usando o Spring, demonstrando habilidades cruciais em áreas como desenvolvimento de APIs, segurança, persistência de dados e qualidade de código. Espero que esta documentação aprimorada ajude a impressionar os recrutadores de TI e destaque suas habilidades e realizações.
 
 ## Requisitos
 
