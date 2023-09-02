@@ -5,7 +5,7 @@
 Este projeto, denominado "Agrix," representa uma aplicação Java baseada no ecossistema Spring que aborda vários aspectos fundamentais do desenvolvimento de software, incluindo o design de APIs RESTful, gerenciamento de dependências, persistência de dados, manipulação de erros, Dockerização e segurança. A seguir, destacamos os principais aspectos deste projeto e suas realizações:
 
 ## Conquistas no Projeto
-Neste projeto, tive a oportunidade de demonstrar uma série de habilidades essenciais, incluindo:
+###Neste projeto, tive a oportunidade de demonstrar uma série de habilidades essenciais, incluindo:
 
 Desenvolvimento com Spring
 Utilizei o ecossistema Spring para criar rotas eficientes e seguras para nossa API.
@@ -47,7 +47,6 @@ Plantação (crop): Representa uma plantação e mantém um relacionamento "muit
 Fertilizante (fertilizer): Esta nova tabela representa um fertilizante e está relacionada de forma "muitos para muitos" com a tabela de plantações (crop) por meio da tabela crop_fertilizer.
 É importante observar que embora os nomes das tabelas e colunas possam ser personalizados, o projeto inclui testes que fazem solicitações à sua API, esperando respostas com base nesse modelo de dados. Embora os testes não exijam um banco de dados específico, sugerimos o uso do MySQL para sua implementação. Lembre-se de que os testes utilizam um banco de dados "mockado" em memória do tipo H2, o que não deve afetar sua implementação, mas evite funcionalidades altamente específicas de um determinado banco de dados que não sejam compatíveis com os testes.
 
-Em resumo, o projeto "Agrix" representa uma realização significativa no desenvolvimento de aplicativos Java usando o Spring, demonstrando habilidades cruciais em áreas como desenvolvimento de APIs, segurança, persistência de dados e qualidade de código. Espero que esta documentação aprimorada ajude a impressionar os recrutadores de TI e destaque suas habilidades e realizações.
 
 ## Requisitos
 
