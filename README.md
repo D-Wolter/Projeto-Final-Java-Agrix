@@ -48,8 +48,6 @@ Plantação (crop): Representa uma plantação e mantém um relacionamento "muit
 
 Fertilizante (fertilizer): Esta nova tabela representa um fertilizante e está relacionada de forma "muitos para muitos" com a tabela de plantações (crop) por meio da tabela crop_fertilizer.
 
-É importante observar que embora os nomes das tabelas e colunas possam ser personalizados, o projeto inclui testes que fazem solicitações à sua API, esperando respostas com base nesse modelo de dados. Embora os testes não exijam um banco de dados específico, sugerimos o uso do MySQL para sua implementação. Lembre-se de que os testes utilizam um banco de dados "mockado" em memória do tipo H2, o que não deve afetar sua implementação, mas evite funcionalidades altamente específicas de um determinado banco de dados que não sejam compatíveis com os testes.
-
 
 ## Requisitos
 
