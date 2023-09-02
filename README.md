@@ -5,9 +5,9 @@
 Este projeto, denominado "Agrix," representa uma aplicação Java baseada no ecossistema Spring que aborda vários aspectos fundamentais do desenvolvimento de software, incluindo o design de APIs RESTful, gerenciamento de dependências, persistência de dados, manipulação de erros, Dockerização e segurança. A seguir, destacamos os principais aspectos deste projeto e suas realizações:
 
 ## Conquistas no Projeto
-###Neste projeto, tive a oportunidade de demonstrar uma série de habilidades essenciais, incluindo:
+### Neste projeto, tive a oportunidade de demonstrar uma série de habilidades essenciais, incluindo:
 
-Desenvolvimento com Spring
+### Desenvolvimento com Spring
 Utilizei o ecossistema Spring para criar rotas eficientes e seguras para nossa API.
 
 Implementei a injeção de dependência para conectar as camadas de controle, serviço e persistência, promovendo um código limpo e modular.
@@ -18,27 +18,27 @@ Criei buscas personalizadas usando o Spring Data JPA para aprimorar a eficiênci
 
 Utilizei campos de data nas rotas da API e no banco de dados para suportar funcionalidades relacionadas a datas.
 
-Testes Unitários e Qualidade de Código
+###  Testes Unitários e Qualidade de Código
 
 Desenvolvi testes unitários abrangentes para garantir a qualidade e o funcionamento correto da implementação.
 
 Alcancei uma cobertura de código adequada, garantindo que os testes abranjam todos os cenários críticos.
 
-Gerenciamento de Erros
+### Gerenciamento de Erros
 
 Implementei uma estratégia de gerenciamento de erros sólida no Spring Web, proporcionando respostas adequadas a exceções inesperadas.
 
-Dockerização
+### Dockerização
 
 Criei um Dockerfile personalizado para facilitar a implantação e execução da aplicação em contêineres Docker, melhorando a portabilidade e escalabilidade da aplicação.
 
-Segurança
+### Segurança
 
 Utilizei o Spring Security para adicionar autenticação ao projeto, protegendo nossos recursos de forma eficaz.
 
 Garanti que diferentes rotas atendam a regras específicas de autorização, aumentando a segurança da aplicação.
 
-Detalhes das Entidades
+### Detalhes das Entidades
 
 Neste projeto, trabalhamos com as seguintes entidades:
 
