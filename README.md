@@ -22,8 +22,7 @@ Neste projeto tive oportunidade de exercitar:
 - Garantir que diferentes rotas atenda a regras específicas de autorização. 
 
 
-## Especificações do projeto
-
+## Detalhes das Entidades
 
 
 Nesse modelos, temos as seguintes tabelas:
@@ -39,7 +38,6 @@ Alguns elementos importantes a considerar sobre a implementação da camada de p
 - Os testes do projeto não esperam um banco de dados específico. No entanto, sugerimos que você utilize o MySQL como banco de dados.
 - Os testes do projeto utilizam um banco "mockado" em memória do tipo H2. Isso não deve afetar sua implementação, mas tome cuidado ao utilizar funcionalidades muito específicas de um determinado tipo de banco de dados e que não sejam compatíveis com os testes.
 </details>
-
 
 
 ## Requisitos
