@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "d229dc98-897a-4653-acf1-7e9e31a098f0",
+		"name": "Agrix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28273278"
+	},
+	"item": [
+		{
+			"name": "A-01-PostNewFarm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fazenda D-Wolter\",\r\n  \"size\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/farms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"farms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A-02-GetAllFarms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/farms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"farms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A-03-GetFarmById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/farms/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"farms",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bookId",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A-04-PostFarm(farmId)Crop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Couve-flor\",\r\n  \"plantedArea\": 5.43\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/farms/1/crops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"farms",
+						"1",
+						"crops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A-05-GetFarm(farmId)Crop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/farms/1/crops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"farms",
+						"1",
+						"crops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A-06-GetAllCrops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A-07-GetCropById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B-07-GetCropByPeriod",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crops/search?start=2023-01-07&end=2024-01-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crops",
+						"search"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2023-01-07"
+						},
+						{
+							"key": "end",
+							"value": "2024-01-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B-08-PostFertilizer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Compostagem\",\r\n  \"brand\": \"Feita em casa\",\r\n  \"composition\": \"Restos de alimentos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fertilizers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fertilizers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B-09-GetFertilizers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fertilizers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fertilizers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B-10-GetFertilizerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fertilizers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fertilizers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B-11-Post(cropId)fertilizers(fertilizerId)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crops/1/fertilizers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crops",
+						"1",
+						"fertilizers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B-12-Get(cropId)fertilizers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crops/1/fertilizers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crops",
+						"1",
+						"fertilizers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C-13-PostPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"danielwolter\",\n    \"password\": \"12345678\",\n    \"role\": \"ADMIN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C-14-PostAuthLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"danielwolter\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
